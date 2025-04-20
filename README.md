@@ -1,9 +1,9 @@
-# Selux Diagnostics Automation
+# Lab Automation
 A walkthrough of my work with Selux Dx, working on automated blood separation and inoculation systems.
 The Selux Dx Systems aim to significantly reduce time to AST results from the current standard. 
 This allows for faster, more targeted care of patients, aiming to reduce Sepsis and superbugs.
 
-I worked as an embedded systems programmer and R&D engineer at Selux Dx. 
+I worked as an embedded systems programmer and R&D engineer.
 During this time, I became the lead automation programmer for 2 of the 3 systems: The Separator and the Inoculator.
 ### Please Note! 
 This is an informal review and walkthrough of my work at Selux Diagnostics.
@@ -21,8 +21,8 @@ The separator inputs 1-2 positive blood samples, isolates the bacteria, and outp
 bacterial resuspension of a set McFarland. It uses a Hamilton pipettor, Hettich centrifuge,
 Festo gripper, spectrophotometer, and custom sample deck.
 
-Selux automation is done in a custom scripting language, created in C#. When
-I first started at Selux, I worked only in the scripting language - creating the 
+The Separator automation is done in a custom scripting language, created in C#. When
+I first started in this role, I worked only in the scripting language - creating the 
 original happy path script for the Separator. 
 In the early days of the Separator, I spent a lot of time working with the microbiologists 
 creating custom test scripts to optimize and understand the scientific process.
@@ -50,8 +50,8 @@ and ideas the microbiologists wanted to test.
 
 I was the sole developer of this script for around 2 years, and remained the lead script developer.
 
-Originally, the C# codebase was created and updated by a contract manufacturing company. As Selux grew, we wanted more 
-control over this code. In my third year at Selux, I joined the new internal software development team, and began working
+Originally, the C# codebase was created and updated by a contract manufacturing company. As the company grew, we wanted more 
+control over this code. In my third year in this role, I joined the new internal software development team, and began working
 in C#. Having access to this codebase really opened up so many development possibilities. I had a list of things that the 
 developers had said were too time-consuming, difficult, or impossible that I was now able to implement. We sped up the instrument
 by over 20%, added new Hamilton pipettor functions, and added better structure and options to the scripting language.
@@ -101,7 +101,7 @@ This Inoculator allowed for a very minimal preparation workflow, since all mixin
 
 The Inoculator was developed while we were still working with an external manufacturing company that also developed our codebase.
 While we were still developing via a scripting language, I was able to help shape the scripting language based on the pitfalls
-and constraints I had learned from the Separator. This allowed Selux to have a lot more control over the Inoculator scripting, 
+and constraints I had learned from the Separator. This allowed us to have a lot more control over the Inoculator scripting, 
 and easier ways of testing and optimizing hardware and workflow. The scripting language was still similar to the Separator's,
 but allowed for script subroutines, named memory registers, and much more customization in each low level command. 
 
